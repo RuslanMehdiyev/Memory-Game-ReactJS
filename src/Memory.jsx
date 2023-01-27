@@ -48,6 +48,11 @@ export default function Memory() {
                     : foundedColor.includes(item)
                     ? item
                     : "",
+                  pointerEvents: tiles.includes(item)
+                    ? "none"
+                    : foundedColor.includes(item)
+                    ? "none"
+                    : "auto",
                 }}
                 onClick={() => handleColor(item)}
               ></div>
